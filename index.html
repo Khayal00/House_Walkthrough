@@ -116,7 +116,7 @@
             { target: 'Corridor',  position: '3 1.6 3',    img: 'assets/link1.png', size: 0.6 }
           ]
         },
-        Kitchen:    { src: '#imgKitchen',   hotspots: [ { target: 'Living_Room', position: '4 1.6 -7', img: 'assets/link2.png', size: 0.8 } ] },
+        Kitchen:    { src: '#imgKitchen',   hotspots: [ { target: 'Living_Room', position: '4 1.6 -7', img: 'assets/link2.png', size: 0.7 } ] },
         Reception:  { src: '#imgReception', hotspots: [ { target: 'Living_Room', position: '5 1.6 -1',  img: 'assets/link.png',  size: 0.6 } ] },
         Corridor: {
           src: '#imgCorridor',
@@ -179,7 +179,7 @@
           // التوهج
           const glow = document.createElement('a-plane');
           glow.setAttribute('position', hs.position);
-          const glowScale = (hs.size || 0.6) * 1.2;
+          const glowScale = (hs.size || 0.6) * 1.4;
           glow.setAttribute('width', glowScale);
           glow.setAttribute('height', glowScale);
           glow.setAttribute('look-at', '#cameraRig');
@@ -194,7 +194,7 @@
           label.setAttribute('width', 4);
           label.setAttribute('look-at', '#cameraRig');
           const pos = hs.position.split(' ');
-          label.setAttribute('position', `${pos[0]} ${parseFloat(pos[1]) + 0.6} ${pos[2]}`);
+          label.setAttribute('position', `${pos[0]} ${parseFloat(pos[1]) + 0.65} ${pos[2]}`);
           label.setAttribute('scale', '0 0 0');
           label.setAttribute('visible', 'true');
 
@@ -339,3 +339,4 @@
     </script>
   </body>
 </html>
+
